@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travera - Hotel Comparisons</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hotels.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Travera</span>
+                <span class="logo-dot"></span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html#discover" class="nav-link">Discover</a>
+                <a href="index.html#plan" class="nav-link">Plan</a>
+                <a href="index.html#features" class="nav-link">Features</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="hotels-page">
+        <div class="hotels-header">
+            <div class="search-bar">
+                <input type="text" id="destination-search" placeholder="Search destination...">
+                <input type="date" id="check-in">
+                <input type="date" id="check-out">
+                <select id="budget-range">
+                    <option value="">Select Budget</option>
+                    <option value="0-2000">Under ₹2000</option>
+                    <option value="2000-4000">₹2000 - ₹4000</option>
+                    <option value="4000-6000">₹4000 - ₹6000</option>
+                    <option value="6000+">Above ₹6000</option>
+                </select>
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+
+        <div class="hotels-container">
+            <div class="destination-info">
+                <h1 id="destination-title">Loading...</h1>
+                <p id="destination-description"></p>
+            </div>
+
+            <div class="hotels-grid-container">
+                <div class="slider-controls">
+                    <button class="slider-btn prev" aria-label="Previous"></button>
+                    <button class="slider-btn next" aria-label="Next"></button>
+                </div>
+                
+                <div class="hotels-grid-wrapper">
+                    <div id="hotels-grid" class="hotels-grid">
+                        <!-- Hotels will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="hotelData.js"></script>
+    <script src="hotels.js"></script>
+</body>
+</html> 

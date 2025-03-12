@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travera - Smart Travel Companion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Travera</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#discover" class="nav-link">Discover</a>
+                <a href="#plan" class="nav-link">Plan a Trip</a>
+                <a href="#features" class="nav-link">Features</a>
+                <div class="more-menu">
+                    <button class="more-btn">More</button>
+                    <div class="more-content">
+                        <div class="more-grid">
+                            <div class="more-section">
+                                <h3>Tech Stack</h3>
+                                <a href="#tech-ai">AI Technology</a>
+                                <a href="#tech-ar">AR Features</a>
+                                <a href="#tech-cloud">Cloud Infrastructure</a>
+                            </div>
+                            <div class="more-section">
+                                <h3>Solutions</h3>
+                                <a href="#sol-scam">Scam Prevention</a>
+                                <a href="#sol-recommendations">Smart Recommendations</a>
+                                <a href="#sol-offline">Offline Support</a>
+                            </div>
+                            <div class="more-section">
+                                <h3>Contact</h3>
+                                <a href="#contact-form">Get in Touch</a>
+                                <a href="#partnerships">Partnerships</a>
+                                <a href="#feedback">Feedback</a>
+                            </div>
+                            <div class="more-section">
+                                <h3>Help</h3>
+                                <a href="#faqs">FAQs</a>
+                                <a href="#guides">Travel Guides</a>
+                                <a href="#emergency">Emergency Support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                    <svg class="sun-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                </button>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <h1 class="animate-on-scroll">
+                    <span class="gradient-text">Travera</span>
+                    <span class="hero-subtitle">A New Era of Intelligent Travelling</span>
+                </h1>
+                <p class="animate-on-scroll">Embark on a journey through mystical temples, vibrant cultures, and breathtaking landscapes. Let our AI-powered companion craft your perfect Indian adventure.</p>
+                <div class="hero-cta animate-on-scroll">
+                    <button class="cta-button primary">Start Your Journey</button>
+                    <button class="cta-button secondary">Watch Experience</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="image.jpg" alt="Feature Image" class="feature-image">
+                <div class="image-overlay"></div>
+            </div>
+        </div>
+        <div class="scrolling-tiles right">
+            <div class="tile-track">
+                <!-- Tiles will be added via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Discover Section -->
+    <section id="discover" class="discover">
+        <div class="section-header">
+            <h2>Explore Incredible India</h2>
+            <p>Discover the diversity of Indian culture, heritage, and landscapes</p>
+        </div>
+        <div class="destination-slider">
+            <div class="destination-slider-wrapper">
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="ram mandir.JPG" alt="Ram Mandir">
+                        <div class="card-badge">New</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ram Mandir</h3>
+                        <p class="location">Ayodhya, Uttar Pradesh</p>
+                        <div class="card-meta">
+                            <span class="rating">5.0 ★</span>
+                            <span class="duration">1-2 days</span>
+                        </div>
+                        <p class="description">Experience the divine grandeur of the newly constructed Ram Mandir, a symbol of faith and architectural marvel.</p>
+                        <button class="explore-btn">Explore Now</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523" alt="Taj Mahal">
+                        <div class="card-badge">Most Popular</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Taj Mahal</h3>
+                        <p class="location">Agra, Uttar Pradesh</p>
+                        <div class="card-meta">
+                            <span class="rating">4.9 ★</span>
+                            <span class="duration">2-3 days</span>
+                        </div>
+                        <p class="description">Symbol of eternal love, this marble wonder is a UNESCO World Heritage site.</p>
+                        <button class="explore-btn">Explore Now</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23" alt="Manali">
+                        <div class="card-badge">Adventure</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Manali</h3>
+                        <p class="location">Himachal Pradesh</p>
+                        <div class="card-meta">
+                            <span class="rating">4.8 ★</span>
+                            <span class="duration">4-5 days</span>
+                        </div>
+                        <p class="description">A paradise for adventure seekers with snow-capped peaks, lush valleys, and thrilling activities.</p>
+                        <button class="explore-btn">Explore Now</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="Varanasi ghats.JPG" alt="Varanasi Ghats">
+                        <div class="card-badge">Spiritual</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Varanasi Ghats</h3>
+                        <p class="location">Varanasi, Uttar Pradesh</p>
+                        <div class="card-meta">
+                            <span class="rating">4.7 ★</span>
+                            <span class="duration">3-4 days</span>
+                        </div>
+                        <p class="description">Experience the spiritual heart of India along the sacred Ganges River.</p>
+                        <button class="explore-btn">Explore Now</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1" alt="Dalhousie">
+                        <div class="card-badge">Hill Station</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Dalhousie</h3>
+                        <p class="location">Himachal Pradesh</p>
+                        <div class="card-meta">
+                            <span class="rating">4.6 ★</span>
+                            <span class="duration">3-4 days</span>
+                        </div>
+                        <p class="description">A charming hill station with colonial architecture, pine valleys, and magnificent views.</p>
+                        <button class="explore-btn">Explore Now</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1567157577867-05ccb1388e66" alt="Jaipur City Palace">
+                        <div class="card-badge">Heritage</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>City Palace</h3>
+                        <p class="location">Jaipur, Rajasthan</p>
+                        <div class="card-meta">
+                            <span class="rating">4.8 ★</span>
+                            <span class="duration">2-3 days</span>
+                        </div>
+                        <p class="description">Explore the magnificent palace complex showcasing Rajasthani architecture.</p>
+                        <button class="explore-btn">Explore Now</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944" alt="Kerala Backwaters">
+                        <div class="card-badge">Nature</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Kerala Backwaters</h3>
+                        <p class="location">Alleppey, Kerala</p>
+                        <div class="card-meta">
+                            <span class="rating">4.9 ★</span>
+                            <span class="duration">3-4 days</span>
+                        </div>
+                        <p class="description">Cruise through serene waterways in traditional houseboats.</p>
+                        <button class="explore-btn">Explore Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-btn prev" aria-label="Previous">←</button>
+            <button class="slider-btn next" aria-label="Next">→</button>
+        </div>
+    </section>
+
+    <!-- Plan Section -->
+    <section class="plan" id="plan">
+        <h2>Plan Your Perfect Trip</h2>
+        <form class="search-form" onsubmit="event.preventDefault(); window.location.href = `hotels.html?destination=${encodeURIComponent(document.getElementById('destination').value)}`;">
+            <div class="search-group">
+                <label for="destination">Destination</label>
+                <input type="text" id="destination" placeholder="Where do you want to go?" required>
+            </div>
+            <div class="search-group">
+                <label for="check-in">Check In</label>
+                <input type="date" id="check-in" required>
+            </div>
+            <div class="search-group">
+                <label for="check-out">Check Out</label>
+                <input type="date" id="check-out" required>
+            </div>
+            <div class="search-group">
+                <label for="guests">Guests</label>
+                <select id="guests" required>
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5+">5+ Guests</option>
+                </select>
+            </div>
+            <button type="submit" class="search-btn">Search</button>
+        </form>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Smart Travel Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>AI-Powered Suggestions</h3>
+                <p>Get personalized travel recommendations based on your preferences and travel history</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Budget Customization</h3>
+                <p>Smart budget planning with real-time cost tracking and optimization suggestions</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Smart Booking</h3>
+                <p>Compare prices across platforms and get the best deals with price prediction</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💬</div>
+                <h3>Multilingual Assistant</h3>
+                <p>24/7 AI chatbot support in multiple languages for seamless communication</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🗺️</div>
+                <h3>Local Insights</h3>
+                <p>Access curated local guides, hidden spots, and authentic experiences</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>AR Tours</h3>
+                <p>Experience destinations virtually with immersive augmented reality tours</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Bot -->
+    <div class="chat-bot">
+        <button class="chat-toggle" aria-label="Open chat">
+            <span class="chat-icon">💬</span>
+            <span class="chat-badge">AI</span>
+        </button>
+        <div class="chat-window hidden">
+            <div class="chat-header">
+                <div class="chat-header-content">
+                    <div class="chat-avatar">🤖</div>
+                    <div class="chat-title">
+                        <h3>Travel Assistant</h3>
+                        <span class="chat-status">Online</span>
+                    </div>
+                </div>
+                <button class="close-chat" aria-label="Close chat">×</button>
+            </div>
+            <div class="chat-messages">
+                <div class="message bot">
+                    <div class="message-content">
+                        Hello! I'm your AI travel assistant. How can I help you plan your next adventure?
+                    </div>
+                    <div class="message-time">Just now</div>
+                </div>
+                <div class="quick-actions">
+                    <button class="quick-action-btn">Budget Planning</button>
+                    <button class="quick-action-btn">Local Insights</button>
+                    <button class="quick-action-btn">Hidden Gems</button>
+                    <button class="quick-action-btn">AR Tours</button>
+                    <button class="quick-action-btn">Compare Bookings</button>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <div class="language-selector">
+                    <button class="lang-btn active">EN</button>
+                    <button class="lang-btn">हिं</button>
+                    <button class="lang-btn">த</button>
+                </div>
+                <div class="chat-input-wrapper">
+                    <input type="text" class="chat-input" placeholder="Type your message...">
+                    <button class="send-message" aria-label="Send message">
+                        <span>→</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html> 
